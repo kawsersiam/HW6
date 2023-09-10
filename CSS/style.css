@@ -1,0 +1,77 @@
+/* *COMM0N CSS STARTS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    text-align: center;
+    background-color: rgb(253, 34, 0);
+    padding: 10px 0;
+}
+
+
+
+ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+  
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 15px 23px;
+    display: block;
+    font-size: 18px;
+    font-family: arial;
+    position: relative;
+    z-index: 1;
+    
+    
+}
+nav ul li a::before{
+    content:'';
+    width: 0%;
+    height:3px;
+    top:0;
+    left:0;
+    position: absolute;
+    z-index: -1;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+nav ul li:hover a::before{
+    background-color:  rgb(251, 255, 0);
+    width: 100%;
+    
+}
+nav ul li a::after{
+    content:'';
+    width: 0%;
+    height:3px;
+    bottom:0;
+    right:0;
+    position: absolute;
+    z-index: -1;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+nav ul li:hover a::after{
+    background-color: rgb(255, 234, 0);
+    width: 100%;
+}
+
+/* *NAV BAR ENDS */
+
+/* *COMM0N CSS ENDS */
